@@ -17,7 +17,22 @@
         hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer;
     }
     .channel-name-container{
-        @apply flex flex-col justify-center items-center text-xl;
+        @apply flex flex-col justify-center items-center text-base ;
+    }
+    .channelbar-container{
+        @apply flex flex-col justify-start items-start text-left ;
     }
 
+    .main-area-wrapper{
+        @apply flex flex-col text-left justify-between bg-greymid text-textcolor_inactive w-full;
+    }
+    .message-wrapper{
+        @apply flex flex-col w-full p-8  ;
+    }
+    .input-wrapper{
+        @apply flex flex-row w-full p-8 justify-around ;
+    }
+    .text-item{
+        @apply py-3;
+    }
 }

@@ -8,7 +8,7 @@ const Sidebar = () => {
     return (
         <div className={" relative top-0" +
             " left-0 " +
-            "h-screen w-16 m-0 p-0" +
+            "h-screen w-20" +
             " bg-greydark" +
             " text-white" +
             " shadow-lg" +
