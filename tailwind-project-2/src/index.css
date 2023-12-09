@@ -30,9 +30,23 @@
         @apply flex flex-col w-full p-8  ;
     }
     .input-wrapper{
-        @apply flex flex-row w-full p-8 justify-around ;
+        @apply flex flex-row w-full p-5 pb-3 justify-around ;
     }
     .text-item{
         @apply py-3;
     }
+}
+.input-wrapper{
+    height: 10%;
+    min-height: 10%;
+}
+.usercard{
+    display: flex;
+    flex-direction: row;
+}
+.image-container{
+position: relative;
+}
+.userstate{
+
 }

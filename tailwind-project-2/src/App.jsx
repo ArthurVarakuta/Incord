@@ -5,7 +5,7 @@ import Memberbar from "./Components/Memberbar.jsx";
 
 function App() {
   return (
-    <div className={"flex flex-row"}>
+    <div className={"flex flex-row overflow-y-scroll"}>
     <Sidebar />
      <Channelbar />
         <Mainarea />
