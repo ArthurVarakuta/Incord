@@ -4,12 +4,15 @@ const Memberbar = () => {
     return (
         <div className={"flex flex-col bg-greylight h-screen w-1/5"}>
             <div className={"text-textcolor_inactive bg-greydark p-3" +
-                " w-full"}>
+                " w-full cursor-pointer hover:bg-greymid hover:text-white hover:transition-all 0.1s ease-in"}>
                 <span >
                     Userlist
                 </span>
             </div>
-            <div className={"usercard py-3 "}>
+
+
+            <div className={"usercard py-3 px-1 cursor-pointer rounded-full" +
+                " my-1 bg-greymid hover:transition-all 0.1s ease-in"}>
                 <div className={"image-container absolute p-2"}>
                     <img className={"rounded-full"} src="https://via.placeholder.com/50" alt="kartinka"/>
                     <div className={"userstate mt-[-15px] bottom-0 right-0 "} ><FaMoon className={"absolute" +
@@ -24,7 +27,8 @@ const Memberbar = () => {
                     <span>status usera</span>
                 </div>
             </div>
-            <div className={"usercard py-3 "}>
+            <div className={"usercard py-3 px-1 cursor-pointer rounded-full" +
+                " my-1 bg-greymid"}>
                 <div className={"image-container absolute p-2"}>
                     <img className={"rounded-full"} src="https://via.placeholder.com/50" alt="kartinka"/>
                     <div className={"userstate mt-[-15px] bottom-0 right-0 "} ><FaMoon className={"absolute" +
@@ -39,10 +43,11 @@ const Memberbar = () => {
                     <span>status usera</span>
                 </div>
             </div>
-            <div className={"usercard py-3 "}>
+            <div className={"usercard py-3 px-1 cursor-pointer rounded-full" +
+                " my-1 bg-greymid"}>
                 <div className={"image-container absolute p-2"}>
                     <img className={"rounded-full"} src="https://via.placeholder.com/50" alt="kartinka"/>
-                    <div className={"userstate mt-[-15px] bottom-0 right-0"} ><FaMoon className={"absolute" +
+                    <div className={"userstate mt-[-15px] bottom-0 right-0 "} ><FaMoon className={"absolute" +
                         "  bottom-0 right-0  "} />
                     </div>
                     {/*    тут нужна будет
@@ -54,6 +59,8 @@ const Memberbar = () => {
                     <span>status usera</span>
                 </div>
             </div>
+
+
         </div>
     );
 };

@@ -35,18 +35,28 @@
     .text-item{
         @apply py-3;
     }
+    .text-channel{
+        @apply cursor-pointer p-1 px-2 bg-greymid w-full box-border rounded-full m-1 hover:bg-[#111214] hover:text-white ;
+    }
+    .voice-channel{
+        @apply cursor-pointer p-1 px-2 bg-greymid w-full box-border rounded-full m-1 hover:bg-[#111214] hover:text-white ;
+    }
+    .usercard{
+        @apply cursor-pointer   ;
+    }
+    .usercard-info{
+        @apply hover:text-white;
+    }
 }
 .input-wrapper{
-    height: 10%;
-    min-height: 10%;
+    height: 8%;
+    min-height: 75px;
 }
 .usercard{
     display: flex;
     flex-direction: row;
+    transition: ease-in 0.1s;
 }
 .image-container{
 position: relative;
-}
-.userstate{
-
 }
