@@ -36,10 +36,10 @@
         @apply py-3;
     }
     .text-channel{
-        @apply cursor-pointer p-1 px-2 bg-greymid w-full box-border rounded-full m-1 hover:bg-[#111214] hover:text-white ;
+        @apply cursor-pointer p-1 px-2 bg-greymid w-full box-border rounded-full m-1 hover:bg-[#111214] hover:text-white hover:scale-110;
     }
     .voice-channel{
-        @apply cursor-pointer p-1 px-2 bg-greymid w-full box-border rounded-full m-1 hover:bg-[#111214] hover:text-white ;
+        @apply cursor-pointer p-1 px-2 bg-greymid w-full box-border rounded-full m-1 hover:bg-[#111214] hover:text-white hover:scale-110;
     }
     .usercard{
         @apply cursor-pointer   ;
@@ -59,4 +59,8 @@
 }
 .image-container{
 position: relative;
+}
+.voice-channel:hover,
+.text-channel:hover{
+   transition: all 0.1s ease-in-out;
 }
