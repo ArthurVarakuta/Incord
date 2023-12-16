@@ -1,6 +1,9 @@
 import React from 'react';
 import { FiArrowRight } from "react-icons/fi";
-const MyComponent = () => {
+import Modal from "./Modal.jsx";
+import {useStore} from "zustand";
+
+const Mainarea = ({}) => {
     return (
         <div className={"main-area-wrapper"}>
         <div className={"bg-greylight p-3 cursor-pointer hover:bg-greydark" +
@@ -25,9 +28,10 @@ const MyComponent = () => {
                     " justify-center self-center" +
                     " rounded-full cursor-pointer"}> <FiArrowRight  size={25} /> </div>
             </section>
+            {useStore.isOpenModal && <Modal setOpenModal={setOpenModal}  />}
         </div>
 
     );
 };
 
-export default MyComponent;
+export default Mainarea;

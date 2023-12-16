@@ -10,7 +10,6 @@ export const  servers = [
                 library: "library"
             }
         }
-
     },
     {
         servername: "Lightningchannel",
@@ -23,7 +22,6 @@ export const  servers = [
                 library: "library"
             }
         }
-
     },
     {
         servername: "Crapchannel",
@@ -36,6 +34,5 @@ export const  servers = [
                 library: "library"
             }
         }
-
     }
 ]
