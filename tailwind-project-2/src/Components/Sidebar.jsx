@@ -4,9 +4,11 @@ import { BsLightningCharge } from "react-icons/bs";
 import {FaFire, FaPoo,FaPlus} from "react-icons/fa";
 import "../servers.js";
 import {servers} from "../servers.js";
-import {useStore} from "zustand";
+import {useStore} from "../store.jsx";
 
 const Sidebar = ({}) => {
+
+    const {isOpenModal,setIsOpenModal,setIsCloseModal}=useStore()
 
     return (
         <div className={" relative top-0" +
@@ -20,7 +22,7 @@ const Sidebar = ({}) => {
             <SidebarIcon icon={<BsLightningCharge size={32}/>}/>
             <SidebarIcon icon={<FaPoo size={32}/>}/>
             <SidebarIcon icon={<FaGear size={32}/>}/>
-            <SidebarIcon onClick={()=>{useStore((setIsOpenModal)=>{setIsOpenModal(true)})}}  icon={<FaPlus size={32}/>}/>
+            <SidebarIcon onClick={setIsOpenModal}  icon={<FaPlus size={32}/>}/>
 
 
         </div>

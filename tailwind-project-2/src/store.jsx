@@ -1,6 +1,8 @@
 import {create} from "zustand";
 
-const useStore = create((set) => ({
+export const useStore = create((set) => ({
     isOpenModal: false,
-    setIsOpenModal: (value) => set({isOpenModal: value}),
+    setIsOpenModal:() => set(state => ({ isOpenModal: true })),
+    setIsCloseModal:() => set(state => ({ isOpenModal: false })),
 }))
+

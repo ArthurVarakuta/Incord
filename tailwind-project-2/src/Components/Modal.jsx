@@ -1,7 +1,8 @@
 import React from 'react';
+import {useStore} from "../store.jsx";
 
-const Modal = ({setOpenModal}) => {
-
+const Modal = () => {
+ const {setIsCloseModal}=useStore();
     return (
         <div className={"absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" +
             " justify-center h-3/5" +
@@ -41,7 +42,8 @@ const Modal = ({setOpenModal}) => {
                 " w-full" +
                 " h-full" +
                 " m-0 px-0"}>
-                <button onClick={() => setOpenModal(false)} className={"place-self-end bg-green-500" +
+                <button onClick={setIsCloseModal} className={"place-self-end" +
+                    " bg-green-500" +
                     " p-4" +
                     " border-2" +
                     " border-green-400 rounded-2xl mx-8"}>Create!</button>
