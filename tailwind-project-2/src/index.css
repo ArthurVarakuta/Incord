@@ -64,3 +64,6 @@ position: relative;
 .text-channel:hover{
    transition: all 0.1s ease-in-out;
 }
+.modal{
+    filter: blur(600px);
+}

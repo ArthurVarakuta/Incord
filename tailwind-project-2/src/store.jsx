@@ -1,8 +1,7 @@
 import {create} from "zustand";
 
-export const useStore = create((set) => ({
-    isOpenModal: false,
-    setIsOpenModal:() => set(state => ({ isOpenModal: true })),
-    setIsCloseModal:() => set(state => ({ isOpenModal: false })),
+export const useModal = create((set) => ({
+    modalActive: false,
+    setOpenModal:() => set(state => ({ modalActive: true })),
+    setCloseModal:() => set(state => ({ modalActive: false })),
 }))
-
